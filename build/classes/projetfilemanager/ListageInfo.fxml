@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="projetfilemanager.ListageInfoController">
+   <children>
+      <AnchorPane layoutX="-11.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1012.0" style="-fx-background-color: #2A2D33;">
+         <children>
+            <Text fill="WHITE" layoutX="344.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listages des informations">
+               <font>
+                  <Font name="Berlin Sans FB" size="40.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TextAuteur" layoutX="366.0" layoutY="170.0" prefHeight="38.0" prefWidth="297.0" promptText="Auteur" style="-fx-background-color: #515866;" />
+            <TextField fx:id="TextTitre" layoutX="366.0" layoutY="259.0" prefHeight="38.0" prefWidth="297.0" promptText="Titre" style="-fx-background-color: #515866;" />
+            <Text fill="WHITE" layoutX="152.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auteur :">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="152.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre :">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="152.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags :">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="155.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Résumé :">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="132.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaires :">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="ButtonAnnuler" layoutX="21.0" layoutY="18.0" mnemonicParsing="false" onAction="#ButtonAnnuler" prefHeight="55.0" prefWidth="193.0" style="-fx-background-color: #19CC8B;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextArea fx:id="TextTags" layoutX="366.0" layoutY="325.0" prefHeight="103.0" prefWidth="366.0" promptText="Ajoutez des Tags.." style="-fx-background-color: #515866;" />
+            <TextArea fx:id="TextResume" layoutX="366.0" layoutY="431.0" prefHeight="116.0" prefWidth="366.0" promptText="Ajouez un Résumé.." style="-fx-background-color: #515866;" />
+            <TextArea fx:id="TextCommentaires" layoutX="366.0" layoutY="552.0" prefHeight="126.0" prefWidth="366.0" promptText="Ajoutez des Commentaires.." />
+            <Label fx:id="Label1" layoutX="724.0" layoutY="264.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label2" layoutX="767.0" layoutY="362.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
